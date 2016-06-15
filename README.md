@@ -1,6 +1,6 @@
 # docker-saltmaster
 
-[![Build Status](https://travis-ci.org/b225ccc/docker-saltmaster.svg?branch=master)](https://travis-ci.org/b225ccc/docker-saltmaster
+[![Build Status](https://travis-ci.org/b225ccc/docker-saltmaster.svg?branch=master)](https://travis-ci.org/b225ccc/docker-saltmaster)
 
 Running:
 
