@@ -11,3 +11,4 @@ docker run \
   -v /data/services/salt:/salt \
   b225ccc/docker-saltmaster:latest
 ~~~
+
