@@ -9,6 +9,9 @@ docker run \
   --name saltmaster \
   -v /etc/localtime:/etc/localtime:ro \
   -v /data/services/salt:/salt \
+  -p 4505:4505 \
+  -p 4506:4506 \
+  -e "LOG_LEVEL=debug" \
   b225ccc/docker-saltmaster:latest
 ~~~
 
