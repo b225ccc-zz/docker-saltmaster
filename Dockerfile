@@ -22,7 +22,9 @@ RUN \
   mkdir -p /var/log/supervisor
 
 # add custom files
+COPY run.sh /usr/local/bin/run.sh
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+RUN chmod +x /usr/local/bin/run.sh
 
 # volumes
 VOLUME /salt
@@ -30,4 +32,4 @@ VOLUME /salt
 # ports
 EXPOSE 4505 4506 443
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/local/bin/run.sh"]
